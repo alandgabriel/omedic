@@ -94,7 +94,7 @@ class Downloader:
         
     def getAttach (self):
         self.m.select(readonly=False)
-        eliNumb = ['1', '14', '13', '01', '06', '08', '05', '04', '03', '012', '06']
+        eliNumb = ['1', '14', '13', '02', '01', '06', '08', '05', '04', '03', '012', '06']
         domain = ['resultadoseli' , 'gmail']
         for d in domain:
             for en in eliNumb:
