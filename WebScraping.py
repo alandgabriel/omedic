@@ -44,7 +44,7 @@ class Scraping:
         self.URL = "https://omedic.com.mx/admin/"
         self.SUBMIT_BUTTON_XPATH = "/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/div/div[3]/div/div/div[6]/button"
         self.username = 'admin2020'
-        self.password = 'admin2020'
+        self.password = 'OmedicAdmin212121'
         # instalando el web driver de chrome mas reciente e instanciandolo
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_experimental_option(

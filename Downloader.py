@@ -16,8 +16,8 @@ import urllib.request, urllib.parse, urllib.error
 
 client_id = "664990419712-gpdfa298nnk95b8mivog32hafda7g79v.apps.googleusercontent.com"
 client_secret = "Yyj0Y6Un3lHO12XexQsl2K7c"
-refresh_token = "1//05pKdpdNeAFWSCgYIARAAGAUSNwF-L9Ir8Dt9ngZEa298_6p4TLDKjx_DuBRzdDMx7mDZfxiefZshfWO-o4569GBzWq5H2IH71zo"
-access_token = " ya29.a0ARrdaM-1xnd-8wdU7tg3ttX3xOwZOuQ6FiC_Hle4l1sQxs1pqC0X-k3bERVDL1iXTelqVxxfgMe5VgJU_KxgD0xsGIEfuYQpt2ogpHCRxGZLO948Xp_8KAxw8y8noKwe04x3qLICbt8hAxX3266CDMcTNdcL"
+refresh_token = "1//0fFmVyw38nEPwCgYIARAAGA8SNwF-L9Ira2avV-YArwyp7ccs79FFg2lxUhBrOyMHpXL74y0M5BOCP1eD27asw0K2PZKlswcVRMM"
+access_token = "ya29.a0ARrdaM-Drd3MGm_mGaoIvWVJ8schzqkb56RsC_5_6rB6OO_6Yb6tpRDp0L3C9hBjuoucSG_eYgnOK1VpPUeNbUng8Fch_hAmUWAlvkrc1CN-KLP7pOl_KvzHRfyrfQ1velzRPesEAChFiNgm0ldrNmcvYpKd"
 
 
 # The URL root for accessing Google Accounts.
@@ -84,13 +84,13 @@ class Downloader:
           username: the username (email address) of the account to authenticate
           access_token: An OAuth2 access token.
           base64_encode: Whether to base64-encode the output.
-          
-        Returns:
-          The SASL argument for the OAuth2 mechanism.
-        """
+              
+            Returns:
+              The SASL argument for the OAuth2 mechanism.
+            """
         self.auth_string = 'user=%s\1auth=Bearer %s\1\1' % (self.user, self.access_token)
         if base64_encode:
-          self.auth_string = base64.b64encode(self.auth_string)
+            self.auth_string = base64.b64encode(self.auth_string)
         
     def getAttach (self):
         self.m.select(readonly=False)
